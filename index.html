@@ -7,7 +7,7 @@
     <title>Document</title>
 
 <style>
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
 
 header {
@@ -23,18 +23,62 @@ article {
     background-color: rgb(221, 255, 218);
     width: 70vw;
     height: 66.4vh;
+    text-align: center;
+    padding: 3vh;
+    box-sizing: border-box;
 }
 nav {
     background-color: rgb(177, 255, 170);
     width: 20vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+h2{
+    background-color: rgb(255, 153, 0);
+    width: 170px;
+    border-radius: 5px;
+    margin: 1vh;
+    text-align: center;
+}
+.ad {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYCRFgeVi4CW8RWyGlntu66edH98s1irImw&usqp=CAU");
+    width: 160px;
+    height: 255px;
 }
 aside {
     width: 20vw;
     background-color: rgb(255, 229, 158);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 #main {
     display: flex;
     justify-content: flex-end;
+}
+.information {
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(255, 153, 0);
+    width: 100px;
+    border-radius: 5px;
+    margin: 10vh 0;
+}
+
+.button-setings {
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 560px) and (max-width: 750px) {
@@ -52,6 +96,11 @@ aside {
 }
 article {
     width: 100vw;
+}
+.ad {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYCRFgeVi4CW8RWyGlntu66edH98s1irImw&usqp=CAU");
+    width: 360px;
+    height: 255px;
 }
 
 }
@@ -73,6 +122,23 @@ article {
     width: 100vw;
     height: 40.4vh;
 }
+.button {
+    background-color: rgb(255, 153, 0);
+    width: 100px;
+    border-radius: 5px;
+    margin: 10vh 0;
+}
+
+}
+
+@media only screen and (max-width: 329px) {
+.button {
+    background-color: rgb(255, 153, 0);
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 3vh 0;
+}
 
 }
 
@@ -80,12 +146,12 @@ article {
 
 </head>
 <body>
-    
-<header>Header</header>
+   
+<header><span class="information">Information</span></header>
     <div id="main">
-        <article>Article</article>
-        <nav>Nav</nav>
-        <aside>Aside</aside>
+        <article>Всем привет меня зовут Давид. Я делаю крутые сайты и мне это очень нравиться. Я создаю сайты на разные темы и для разных вещей. Посмотреть мои работы вы можете нажав на кнопку ниже. Там вы увидите большое количество моих работ. У них есть описание и картинки. Такчто можете посмотреть :)<div class="button-setings"><div class="button">Посмотреть все мои работы</div></div></article>
+        <nav><h2>Работы</h2><h2>Планы</h2><h2>Сотрудничество</h2><h2>Новости</h2></nav>
+        <aside>реклама<div class="ad"></div></aside>
     </div>
 <footer>Footer</footer>
 
