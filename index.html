@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+*{margin: 0;padding: 0;}
+
+
+header {
+    background-color: aqua;
+    height: 16.8vh;
+}
+footer {
+    background-color: aqua;
+    height: 16.8vh;
+}
+
+article {
+    background-color: rgb(221, 255, 218);
+    width: 70vw;
+    height: 66.4vh;
+}
+nav {
+    background-color: rgb(177, 255, 170);
+    width: 20vw;
+}
+aside {
+    width: 20vw;
+    background-color: rgb(255, 229, 158);
+}
+#main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 560px) and (max-width: 750px) {
+
+    #main {
+    flex-flow: column;
+}
+nav {
+    width: 100vw;
+    height: 30vh;
+}
+aside {
+    width: 100vw;
+    height: 30vh;
+}
+article {
+    width: 100vw;
+}
+
+}
+
+@media only screen and (max-width: 559px) {
+
+#main {
+flex-flow: column;
+}
+nav {
+    width: 100vw;
+    height: 20vh;
+}
+aside {
+    width: 100vw;
+    height: 20vh;
+}
+article {
+    width: 100vw;
+    height: 40.4vh;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+    
+<header>Header</header>
+    <div id="main">
+        <article>Article</article>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+    </div>
+<footer>Footer</footer>
+
+</body>
+</html>
